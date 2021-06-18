@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
+    <title>Document</title>
     <link rel="stylesheet" href="./style/about.css" />
     <link rel="stylesheet" href="icon/css/all.css" />
     <link
@@ -15,40 +15,44 @@
     />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand text-warning" href="./index.html"
-          >Tree of life</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ml-auto">
-            <a
-              class="nav-link active headerLine text-white"
-              aria-current="page"
-              href="./index.html"
-              >Home</a
-            >
-            <a class="nav-link headerLine text-white" href="./about.html"
-              >About</a
-            >
-            <a class="nav-link headerLine text-white" href="#contact"
-              >Contact</a
-            >
+    <!-- Navigation -->
+      <nav class="navbar shadowBox navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand text-warning noselect logo" href="./index.html"
+            ><p class="textLogo text-warning">Tree of life</p></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+              <a
+                class="nav-link active headerLine text-white navItem"
+                aria-current="page"
+                href="./index.html"
+                >Home</a
+              >
+              <a
+                class="nav-link headerLine text-white navItem"
+                href="./about.html"
+                >About</a
+              >
+              <a class="nav-link headerLine text-white navItem" href="#contact"
+                >Contact</a
+              >
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    <!-- Navigation end -->
 
     <div class="container content">
       <div class="row">
@@ -108,16 +112,19 @@
             <div class="row d-flex justify-content-center">
               <!--Grid column-->
               <div class="col-auto">
-                <p class="pt-2">
+                <p class="pt-2 headerAllConent">
                   <strong>Sign up for our newsletter</strong>
                 </p>
               </div>
               <!--Grid column-->
 
               <!--Grid column-->
-              <div class="col-auto">
+              <div class="col-auto buttonSubscribe">
                 <!-- Submit button -->
-                <button type="submit" class="btn btn-outline-light mb-4">
+                <button
+                  type="submit"
+                  class="btn btn-outline-light mb-4 textAllContent"
+                >
                   Subscribe
                 </button>
               </div>
@@ -130,7 +137,7 @@
 
         <!-- Section: Text -->
         <section class="mb-4 noselect">
-          <p>
+          <p class="textAllContent">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
             distinctio earum repellat quaerat voluptatibus placeat nam, commodi
             optio pariatur est quia magnam eum harum corrupti dicta, aliquam
@@ -155,25 +162,47 @@
 
             <!--Grid column-->
             <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
-              <h5 class="text-uppercase" id="contact">Contact</h5>
+              <h5 class="text-uppercase contactFooterHeader" id="contact">
+                Contact
+              </h5>
 
               <ul class="list-unstyled mb-0">
-                <li>
-                  <a href="tel:+38162283315" class="text-white noselect"
+                <li class="my-2">
+                  <a
+                    href="tel:+38162283315"
+                    class="
+                      text-white
+                      noselect
+                      textAllContent
+                      text-decoration-none
+                      headerLine
+                    "
                     >Call me</a
                   >
                 </li>
-                <li>
+                <li class="my-2">
                   <a
                     href="mailto:vladimirmilosevic1995@gmail.com"
-                    class="text-white noselect"
+                    class="
+                      text-white
+                      noselect
+                      textAllContent
+                      text-decoration-none
+                      headerLine
+                    "
                     >Send a message</a
                   >
                 </li>
-                <li>
+                <li class="my-2">
                   <a
                     href="viber://chat/?number=%2B38162283315"
-                    class="text-white noselect"
+                    class="
+                      text-white
+                      noselect
+                      textAllContent
+                      text-decoration-none
+                      headerLine
+                    "
                     >Viber chat</a
                   >
                 </li>
@@ -188,9 +217,14 @@
       <!-- Grid container -->
 
       <!-- Copyright -->
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      <div
+        class="text-center p-3 copyRight"
+        style="background-color: rgba(0, 0, 0, 0.2)"
+      >
         © 2021 Copyright:
-        <a class="text-white" href="https://wlada995.github.io/Portfolio/"
+        <a
+          class="text-white copyRight"
+          href="https://wlada995.github.io/Portfolio/"
           >Milosevic Vladimir</a
         >
       </div>
