@@ -13,6 +13,38 @@ body {
                                     supported by Chrome, Edge, Opera and Firefox */
 }
 
+:root {
+  --fontHeader: "Benne", serif;
+  --fontText: "Bentham", serif;
+  --fontSizeHeader: 34px !important;
+  --fontSizeText: 20px !important;
+  --fontSizeNavItem: 18px !important;
+}
+
+.headerAllConent {
+  font-family: var(--fontHeader);
+  font-size: var(--fontSizeHeader);
+}
+
+.textAllContent {
+  font-family: var(--fontText);
+  font-size: var(--fontSizeText);
+  text-align: center;
+}
+
+.navItem {
+  font-family: var(--fontHeader);
+  font-size: 22px;
+}
+
+.textLogo {
+  font-size: 26px;
+}
+
+.shadowBox {
+  box-shadow: 0px 11px 134px -13px rgba(0, 0, 0, 0.75);
+}
+
 /* Navigation */
 
 .navbar {
@@ -106,4 +138,12 @@ a {
   text-decoration: none;
 }
 
-/* Footer  end */
+.buttonSubscribe {
+  align-self: center;
+}
+
+.contactFooterHeader {
+  font-family: var(--fontHeader);
+  font-size: 24px;
+  font-weight: 600 !important;
+}
