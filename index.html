@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>Flexbox and scss</title>
     <link rel="stylesheet" href="icon/css/all.css" />
     <!-- CSS -->
     <link rel="stylesheet" href="./style/index.css" />
@@ -17,17 +17,17 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Benne&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Benne&family=Bentham&family=Roboto+Slab&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <!-- Navigation -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar shadowBox navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand text-warning noselect" href="./index.html"
-          >Tree of life</a
+        <a class="navbar-brand text-warning noselect logo" href="./index.html"
+          ><p class="textLogo text-warning"> Tree of life </p></a
         >
         <button
           class="navbar-toggler"
@@ -43,15 +43,15 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto">
             <a
-              class="nav-link active headerLine text-white"
+              class="nav-link active headerLine text-white navItem"
               aria-current="page"
               href="#"
               >Home</a
             >
-            <a class="nav-link headerLine text-white" href="./about.html"
+            <a class="nav-link headerLine text-white navItem" href="./about.html"
               >About</a
             >
-            <a class="nav-link headerLine text-white" href="#contact"
+            <a class="nav-link headerLine text-white navItem" href="#contact"
               >Contact</a
             >
           </div>
@@ -66,8 +66,8 @@
     <div class="shadowBox">
       <div class="jumbotron jumbotron-fluid">
         <div class="container">
-          <h1 class="display-4 text-warning noselect">Design this side</h1>
-          <p class="lead noselect">
+          <h1 class="display-4 text-warning noselect headerAllConent">Design this side</h1>
+          <p class="lead noselect textAllContent">
             This is a modified jumbotron that occupies the entire horizontal
             space of its parent.
           </p>
@@ -90,13 +90,13 @@
           />
         </div>
         <div class="col-lg-8 contentText">
-          <p class="noselect">
+          <p class="noselect textAllContent">
             Nature is not just an environment from which we take the necessary
             elements that we need for life. Nature is much more complex and
             important for human development. The existence of nature is one of
             tne main strategic goal for the existence of humanity.
           </p>
-          <p class="noselect">
+          <p class="noselect textAllContent">
             Trees remove air pollution and release air from gases such as carbon
             monoxide, nitrogen dioxide and sulfur dioxide.
           </p>
@@ -108,7 +108,7 @@
 
     <div class="rowContent">
       <div class="textRow">
-        <p class="noselect">
+        <p class="noselect textAllContent">
           Trees also guard the ground and create a colder climate, it can lower
           the air temperature by 1,2 to the 2 degrees.
         </p>
@@ -120,7 +120,7 @@
     </div>
 
     <div class="gallery">
-      <h1>Gallery</h1>
+      <h1 class="headerAllConent">Gallery</h1>
 
       <div class="row my-5">
         <div class="col-lg-4 d-flex justify-content-center">
@@ -132,7 +132,7 @@
               alt="Card image cap"
             />
             <div class="card-body cardText">
-              <p class="card-text noselect">
+              <p class="card-text noselect textAllContent">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
@@ -149,7 +149,7 @@
               alt="Card image cap"
             />
             <div class="card-body cardText">
-              <p class="card-text noselect">
+              <p class="card-text noselect textAllContent">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
@@ -166,7 +166,7 @@
               alt="Card image cap"
             />
             <div class="card-body cardText">
-              <p class="card-text noselect">
+              <p class="card-text noselect textAllContent">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
@@ -185,7 +185,7 @@
               alt="Card image cap"
             />
             <div class="card-body cardText">
-              <p class="card-text noselect">
+              <p class="card-text noselect textAllContent">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
@@ -202,7 +202,7 @@
               alt="Card image cap"
             />
             <div class="card-body cardText">
-              <p class="card-text noselect">
+              <p class="card-text noselect textAllContent">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
@@ -219,7 +219,7 @@
               alt="Card image cap"
             />
             <div class="card-body cardText">
-              <p class="card-text noselect">
+              <p class="card-text noselect textAllContent">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
@@ -268,16 +268,16 @@
             <div class="row d-flex justify-content-center">
               <!--Grid column-->
               <div class="col-auto">
-                <p class="pt-2">
+                <p class="pt-2 headerAllConent">
                   <strong>Sign up for our newsletter</strong>
                 </p>
               </div>
               <!--Grid column-->
 
               <!--Grid column-->
-              <div class="col-auto">
+              <div class="col-auto buttonSubscribe">
                 <!-- Submit button -->
-                <button type="submit" class="btn btn-outline-light mb-4">
+                <button type="submit" class="btn btn-outline-light mb-4 textAllContent">
                   Subscribe
                 </button>
               </div>
@@ -290,7 +290,7 @@
 
         <!-- Section: Text -->
         <section class="mb-4 noselect">
-          <p>
+          <p class="textAllContent">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
             distinctio earum repellat quaerat voluptatibus placeat nam, commodi
             optio pariatur est quia magnam eum harum corrupti dicta, aliquam
@@ -315,27 +315,27 @@
 
             <!--Grid column-->
             <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
-              <h5 class="text-uppercase" id="contact">Contact</h5>
+              <h5 class="text-uppercase contactFooterHeader" id="contact">Contact</h5>
 
               <ul class="list-unstyled mb-0">
                 <li class="my-2">
                   <a
                     href="tel:+38162283315"
-                    class="text-white noselect text-decoration-none headerLine"
+                    class="text-white noselect textAllContent text-decoration-none headerLine"
                     >Call me</a
                   >
                 </li>
                 <li class="my-2">
                   <a
                     href="mailto:vladimirmilosevic1995@gmail.com"
-                    class="text-white noselect text-decoration-none headerLine"
+                    class="text-white noselect textAllContent text-decoration-none headerLine"
                     >Send a message</a
                   >
                 </li>
                 <li class="my-2">
                   <a
                     href="viber://chat/?number=%2B38162283315"
-                    class="text-white noselect text-decoration-none headerLine"
+                    class="text-white noselect textAllContent text-decoration-none headerLine"
                     >Viber chat</a
                   >
                 </li>
@@ -350,9 +350,9 @@
       <!-- Grid container -->
 
       <!-- Copyright -->
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      <div class="text-center p-3 copyRight" style="background-color: rgba(0, 0, 0, 0.2)">
         © 2021 Copyright:
-        <a class="text-white" href="https://wlada995.github.io/Portfolio/"
+        <a class="text-white copyRight" href="https://wlada995.github.io/Portfolio/"
           >Milosevic Vladimir</a
         >
       </div>
